@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    191851,       3931]
-NotebookOptionsPosition[    190564,       3886]
-NotebookOutlinePosition[    190928,       3902]
-CellTagsIndexPosition[    190885,       3899]
+NotebookDataLength[    191819,       3929]
+NotebookOptionsPosition[    190561,       3885]
+NotebookOutlinePosition[    190896,       3900]
+CellTagsIndexPosition[    190853,       3897]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -53,13 +53,12 @@ Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
-  "\n", 
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\n", "\n", 
   RowBox[{"(*", " ", 
    RowBox[{"SE", 
     RowBox[{"(", "2", ")"}], " ", "representation", " ", "of", " ", "rigid", 
     " ", "body", " ", "motion", " ", "in", " ", "the", " ", "plane"}], " ", 
-   "*)"}]}], "\n", 
+   "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{
@@ -279,14 +278,14 @@ Cell[BoxData[{
      RowBox[{"Union", "@", 
       RowBox[{"Cases", "[", 
        RowBox[{"formula", ",", "pat", ",", 
-        RowBox[{"-", "1"}]}], "]"}]}]}], "]"}]}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", "Conversions", " ", "*)"}]}], "\n", 
+        RowBox[{"-", "1"}]}], "]"}]}]}], "]"}]}], "\[IndentingNewLine]", "\n", 
+  RowBox[{"(*", " ", "Conversions", " ", "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   RowBox[{"FtToM", "=", "0.3048"}], ";"}], "\n", "\[IndentingNewLine]", 
+   RowBox[{"FtToM", "=", "0.3048"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
-   RowBox[{"Ball", " ", "Constants"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+   RowBox[{"Ball", " ", "Constants"}], " ", "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"m", "=", "0.625"}], ";"}], "\n", 
  RowBox[{
@@ -305,7 +304,7 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"Lhand", "=", 
     RowBox[{"0.3048", "*", 
-     RowBox[{"8.5", "/", "12"}]}]}], ";"}], "\[IndentingNewLine]", "\n", 
+     RowBox[{"8.5", "/", "12"}]}]}], ";"}], "\n", "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "World", " ", "to", " ", "Joint", " ", "Frame", " ", "Transformations"}], 
@@ -334,11 +333,11 @@ Cell[BoxData[{
       RowBox[{"Lhand", ",", "0", ",", "0"}], "]"}], ".", 
      RowBox[{"g", "[", 
       RowBox[{"0", ",", "0", ",", "0"}], "]"}]}]}], ";"}], 
-  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\n", 
   RowBox[{"(*", " ", 
    RowBox[{
    "World", " ", "to", " ", "Ball", " ", "Frame", " ", "Transformations", " ",
-     "prior", " ", "to", " ", "roll"}], "*)"}]}], "\n", 
+     "prior", " ", "to", " ", "roll"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"gballbefore", "=", 
    RowBox[{"gwrist", ".", 
@@ -545,9 +544,9 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"coordwrist", "[", "t", "]"}], ",", 
        RowBox[{"coordfingertip", "[", "t", "]"}]}], "}"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+  "\n", "\n", 
   RowBox[{"(*", " ", 
-   RowBox[{"Ball", " ", "Graphics"}], " ", "*)"}]}], "\n", 
+   RowBox[{"Ball", " ", "Graphics"}], " ", "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Graphicsballbefore", " ", "=", " ", 
    RowBox[{"Circle", "[", 
@@ -562,10 +561,10 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"coordline1before", "[", "t", "]"}], ",", 
        RowBox[{"coordline2before", "[", "t", "]"}]}], "}"}], "]"}]}], ";"}], 
-  "\n", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{"Solving", " ", "for", " ", "conditions", " ", "at", " ", "roll"}],
-    " ", "*)"}]}], "\[IndentingNewLine]", 
+    " ", "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"troll", "=", "0"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -3884,10 +3883,9 @@ $CellContext`time$$]}], Axes -> True],
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1920, 1035},
-WindowMargins->{{Automatic, 1280}, {493, Automatic}},
-FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
-21, 2016)",
+WindowSize->{1280, 1028},
+WindowMargins->{{0, Automatic}, {Automatic, 28}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -3902,34 +3900,34 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 297, 7, 148, "Title"],
-Cell[880, 31, 524, 11, 96, "Input"],
+Cell[580, 22, 297, 7, 150, "Title"],
+Cell[880, 31, 524, 11, 92, "Input"],
 Cell[CellGroupData[{
-Cell[1429, 46, 203, 3, 64, "Section"],
+Cell[1429, 46, 203, 3, 65, "Section"],
 Cell[CellGroupData[{
-Cell[1657, 53, 38887, 927, 2427, "Input"],
-Cell[40547, 982, 2356, 36, 24, "Message"],
-Cell[42906, 1020, 3198, 46, 45, "Output"],
-Cell[46107, 1068, 6403, 111, 237, "Output"],
-Cell[52513, 1181, 5341, 95, 234, "Output"],
-Cell[57857, 1278, 5412, 92, 445, "Output"]
+Cell[1657, 53, 38884, 926, 2562, "Input"],
+Cell[40544, 981, 2356, 36, 24, "Message"],
+Cell[42903, 1019, 3198, 46, 45, "Output"],
+Cell[46104, 1067, 6403, 111, 237, "Output"],
+Cell[52510, 1180, 5341, 95, 234, "Output"],
+Cell[57854, 1277, 5412, 92, 445, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63318, 1376, 301, 4, 64, "Section"],
+Cell[63315, 1375, 301, 4, 64, "Section"],
 Cell[CellGroupData[{
-Cell[63644, 1384, 54407, 1200, 2679, "Input"],
-Cell[118054, 2586, 512, 11, 45, "Output"],
+Cell[63641, 1383, 54407, 1200, 2679, "Input"],
+Cell[118051, 2585, 512, 11, 45, "Output"],
 Cell[CellGroupData[{
-Cell[118591, 2601, 89, 1, 24, "Print"],
-Cell[118683, 2604, 88, 1, 24, "Print"]
+Cell[118588, 2600, 89, 1, 24, "Print"],
+Cell[118680, 2603, 88, 1, 24, "Print"]
 }, Open  ]],
-Cell[118786, 2608, 20459, 350, 249, "Output"],
-Cell[139248, 2960, 15441, 268, 248, "Output"],
-Cell[154692, 3230, 12517, 220, 252, "Output"],
-Cell[167212, 3452, 8844, 160, 251, "Output"],
-Cell[176059, 3614, 11695, 207, 249, "Output"],
-Cell[187757, 3823, 2767, 58, 557, "Output"]
+Cell[118783, 2607, 20459, 350, 249, "Output"],
+Cell[139245, 2959, 15441, 268, 248, "Output"],
+Cell[154689, 3229, 12517, 220, 252, "Output"],
+Cell[167209, 3451, 8844, 160, 251, "Output"],
+Cell[176056, 3613, 11695, 207, 249, "Output"],
+Cell[187754, 3822, 2767, 58, 557, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
